@@ -3,7 +3,7 @@ name: Unzip Files on Upload
 on:
   push:
     paths:
-      - "surveyup.zip"  # This will trigger the action whenever a zip file is uploaded
+      - "surveyup.zip"  # This will trigger the action whenever this specific zip file is uploaded
 
 jobs:
   unzip:
@@ -16,10 +16,11 @@ jobs:
       - name: Unzip the file
         run: |
           mkdir unzipped_files
-          unzip '*.zip' -d ./unzipped_files/  # Unzips all zip files to the 'unzipped_files' directory
+          unzip surveyup.zip -d ./unzipped_files/  # Unzips surveyup.zip to the 'unzipped_files' directory
 
       - name: Commit unzipped files
         run: |
           git add ./unzipped_files/*
           git commit -m "Unzipped files"
           git push
+
