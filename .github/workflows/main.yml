@@ -2,6 +2,8 @@ name: Unzip Files on Upload
 
 on:
   push:
+    branches:
+      - main 
     paths:
       - "surveyup.zip"  # This will trigger the action whenever this specific zip file is uploaded
 
