@@ -19,3 +19,5 @@ This package includes the following key functions:
 
 ## Notes
 This package will automatically install the `survey` package. Please make sure to use survey design objections created by the `svydesign()` function. 
+
+Review documentation of each function for proper entry and execution.
