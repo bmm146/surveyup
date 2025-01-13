@@ -1,0 +1,20 @@
+Package: surveyup
+Title: Weighted Survey Analysis Assistance
+Version: 0.1.0
+Authors@R: 
+    person("Bridget", "Mayrer", , "bmm146@pitt.edu", role = c("aut", "cre"))
+Description: This package extends the `survey` R package for analyzing survey data from NHANES and NAMCS. 
+    `surveyup` provides functions to load, merge, and manipulate NHANES and NAMCS datasets with ease, 
+    supporting weighted analysis for survey design objects.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.2
+Imports:
+    survey,
+    dplyr,
+    tidyr,
+    haven
+Suggests: 
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
