@@ -3,7 +3,7 @@ name: Unzip Files on Upload
 on:
   push:
     paths:
-      - "*.zip"  # This will trigger the action whenever a zip file is uploaded
+      - "surveyup.zip"  # This will trigger the action whenever a zip file is uploaded
 
 jobs:
   unzip:
