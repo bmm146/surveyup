@@ -15,4 +15,4 @@ This package includes the following key functions:
 
 `load_namcs_data`: Loads NAMCS data directly from NAMCS and merges the datasets for use in survey analysis.
 
-`create_survey_tables_and_ci`: Generates survey tables with confidence intervals for continuous and categorical variables, facilitating weighted survey analysis.
+`create_survey_tables_and_ci`: Generates survey tables with confidence intervals for continuous and categorical variables, facilitating weighted survey analysis. This functions generates all levels for categorical variables to avoid duplicate lines of codes. 
